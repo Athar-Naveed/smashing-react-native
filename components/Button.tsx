@@ -4,11 +4,10 @@ import { Pressable, Text, View } from "react-native";
 type ButtonProps = {
   label: string;
   theme?: "primary";
+  onPress?: () => void;
 };
 
-const Button = ({ label, theme }: ButtonProps) => {
-  const onPress = () => alert(`${label} is pressed`);
-
+const Button = ({ label, theme, onPress }: ButtonProps) => {
   if (theme === "primary") {
     return (
       <View className="w-80 h-16 mx-5 my-3 border-4 border-[#ffd33d] rounded-2xl overflow-hidden">

@@ -9,10 +9,10 @@ const ImageViewer = ({ imgSource }: Props) => {
     <Image
       source={imgSource}
       style={{
-        width: 320,
-        height: 300,
+        width: 350,
+        height: 450,
         borderRadius: 27,
-        objectFit: "contain",
+        objectFit: "cover",
       }}
     />
   );
